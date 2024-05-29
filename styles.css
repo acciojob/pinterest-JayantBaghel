@@ -20,7 +20,6 @@ html {
 .hero img {
   width: 100%;
   height: 100%;
-  display: inline-block;
   object-fit: cover;
 }
 
