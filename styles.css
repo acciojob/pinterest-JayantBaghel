@@ -1,33 +1,44 @@
-body, html {
+/* Reset and Box-Sizing */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
+/* Body and HTML */
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Hero Section */
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 100vh; /* Full viewport height */
     overflow: hidden;
 }
 
-.hero img {
+/* Hero Image */
+.hero-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ensure the image covers the container */
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
 }
 
+/* Hero Content */
 .hero-content {
     text-align: center;
     color: white;
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
@@ -40,6 +51,7 @@ body, html {
     margin: 0.5em 0;
 }
 
+/* Explore Button */
 .explore-button {
     padding: 10px 20px;
     background-color: #e60023;
