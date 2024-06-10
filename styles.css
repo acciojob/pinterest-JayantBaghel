@@ -1,66 +1,27 @@
-/* Reset and Box-Sizing */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-/* Body and HTML */
-body, html {
-    font-family: Arial, sans-serif;
-    height: 100%;
-}
-
-/* Hero Section */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Hero Image */
-.hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the container */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.image {
+  width: 60%;
+  height: 50%;
+  object-fit: cover;
+}
+.container {
+  text-align: center;
+  width: 25%;
 }
 
-/* Hero Content */
-.hero-content {
-    text-align: center;
-    color: white;
-    position: relative;
-    z-index: 1;
-}
-
-.hero h1 {
-    font-size: 3em;
-    margin: 0.5em 0;
-}
-
-.hero p {
-    font-size: 1.5em;
-    margin: 0.5em 0;
-}
-
-/* Explore Button */
-.explore-button {
-    padding: 10px 20px;
-    background-color: #e60023;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-.explore-button:hover {
-    background-color: #c5001e;
+.btn {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
 }
